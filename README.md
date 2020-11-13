@@ -1,70 +1,45 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div id="readme" class="Box-body readme blob js-code-block-container">
+  <article class="markdown-body entry-content p-3 p-md-6" itemprop="text">
+    <p align="center">Drag & drop objects to a document</p>
+    <p align="center">
+      <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/gisabernardess/react-dnd">
+      <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/gisabernardess/react-dnd">
+      <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/gisabernardess/react-dnd">
+      <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gisabernardess/react-dnd">
+      <img alt="Github license" src="https://img.shields.io/github/license/gisabernardess/react-dnd">
+    </p>
+    <h2>:speech_balloon: Project</h2>
+    <p>A simple application to write text and add/objects and images to a document.</p>
+    <h2>:rocket: Technologies</h2>
+    <p>This project was developed with the following technologies:</p>
+    <ul>
+      <li><a href="https://reactjs.org/" rel="nofollow">React.js</a></li>
+    </ul>
+    <h2>:information_source:</a> How To Use </h2>
+    <p>To clone and run this application, you'll need <a href="https://git-scm.com" rel="nofollow">Git</a> and  <a href="https://legacy.yarnpkg.com" rel="nofollow">Yarn</a>. From your command line:</p>
+    <div class="highlight highlight-source-shell">
+      <pre><span class="pl-c"><span class="pl-c">#</span> Clone this repository</span> 
+$ git clone https://github.com/gisabernardess/react-dnd <br/>
+<span class="pl-c"><span class="pl-c">#</span> Go into the repository</span> 
+$ <span class="pl-c1">cd</span> react-dnd <br/>
+<span class="pl-c"><span class="pl-c">#</span> Install dependencies</span>
+$ yarn <br/>
+<span class="pl-c"><span class="pl-c">#</span> Run the development server</span>
+$ yarn start <br/>
+<span class="pl-c"><span class="pl-c">#</span> Navigate to http://localhost:3000</span>
+<span class="pl-c"><span class="pl-c">#</span> The app will automatically reload if you change any of the source files.</span></pre>
+</div>
+<h2>:brain: Specification</h2>
+    <ul>
+    <li>Write on the screen in a specific area that simulates a paper, so that I can preview what I will get when I print <i>[incomplete]</i></li>
+    <li>Have a small library of predefined elements to use on my document, so that I can create my document with more ease</li>
+    <li>Be able to drag and drop elements from the library, like svgs or images, to the simulated paper, so that I can easily use the assets that I need</li>
+    <li>Be able to reorder the elements from the library, so that they stay in the same position even when I refresh the screen, so that I can keep my library the way I need <i>[incomplete]</i></li>
+    <li>Be able to select an element on the simulated paper and see on a panel basic element properties like name, size and position <i>[incomplete]</i></li>
+    </ul>
+    <h2>:pencil: License</h2>
+    <p>This project is under the MIT license. See the <a href="https://github.com/gisabernardess/react-dnd/blob/main/LICENSE" rel="nofollow">LICENSE</a> for more information.</p>
+    <hr>
+    <p>Made with ♥ by Gisele Silva :wave: <a href="https://www.linkedin.com/in/gisabernardess/" rel="nofollow">Get in touch!</a></p>
+  </article>
+</div>
