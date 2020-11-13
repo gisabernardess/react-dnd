@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.paper {
+  width: 50rem;
+  padding: 4.8rem;
+  margin: 2.4rem auto;
+  border: 1px #d3d3d3 solid;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.paper .element {
+  display: inline-flex;
+}
