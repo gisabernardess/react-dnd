@@ -1,6 +1,7 @@
 export const loadBigHeads = () => [
   {
     id: 1,
+    name: "Big Head 1",
     content: {
       accessory: "roundGlasses",
       body: "chest",
@@ -26,6 +27,7 @@ export const loadBigHeads = () => [
   },
   {
     id: 2,
+    name: "Big Head 2",
     content: {
       accessory: "none",
       body: "chest",
@@ -51,6 +53,7 @@ export const loadBigHeads = () => [
   },
   {
     id: 3,
+    name: "Big Head 3",
     content: {
       accessory: "roundGlasses",
       body: "chest",
@@ -76,6 +79,7 @@ export const loadBigHeads = () => [
   },
   {
     id: 4,
+    name: "Big Head 4",
     content: {
       accessory: "none",
       body: "breasts",
@@ -101,6 +105,7 @@ export const loadBigHeads = () => [
   },
   {
     id: 5,
+    name: "Big Head 5",
     content: {
       accessory: "shades",
       body: "chest",

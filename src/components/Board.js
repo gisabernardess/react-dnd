@@ -17,10 +17,13 @@ const Board = (props) => {
     e.target.appendChild(card);
 
     if (e.target.id === "menu") {
-      const index = elements.findIndex((element) => {
-        return element.id === Number(card_id);
+      const posicao = elements?.findIndex((element, index) => {
+        console.log("findindex", index);
+        return element?.id === Number(card_id);
       });
-      elements.push(elements.splice(index, 1)[0]);
+
+      elements.push(elements.splice(posicao, 1)[0]);
+      setElements(elements);
       localStorage.setItem("elementsStorage", JSON.stringify(elements));
     }
   };
@@ -35,6 +38,8 @@ const Board = (props) => {
       className={props.className}
       onDrop={drop}
       onDragOver={dragOver}
+      contentEditable={true}
+      suppressContentEditableWarning={true}
     >
       {props.children}
     </div>

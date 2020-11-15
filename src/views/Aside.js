@@ -28,7 +28,7 @@ const Aside = () => {
       <Board id="menu" className="menu">
         {elements?.map((element) => {
           return (
-            <Element key={uuidv4()} id={element?.id}>
+            <Element key={uuidv4()} id={element?.id} name={element?.name}>
               <BigHead {...element?.content} />
             </Element>
           );

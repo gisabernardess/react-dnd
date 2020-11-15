@@ -31,11 +31,11 @@ $ yarn start <br/>
 </div>
 <h2>:brain: Specification</h2>
     <ul>
-    <li>Write on the screen in a specific area that simulates a paper, so that I can preview what I will get when I print <i>[incomplete]</i></li>
+    <li>Write on the screen in a specific area that simulates a paper, so that I can preview what I will get when I print</li>
     <li>Have a small library of predefined elements to use on my document, so that I can create my document with more ease</li>
     <li>Be able to drag and drop elements from the library, like svgs or images, to the simulated paper, so that I can easily use the assets that I need</li>
-    <li>Be able to reorder the elements from the library, so that they stay in the same position even when I refresh the screen, so that I can keep my library the way I need <i>[incomplete]</i></li>
-    <li>Be able to select an element on the simulated paper and see on a panel basic element properties like name, size and position <i>[incomplete]</i></li>
+    <li>Be able to reorder the elements from the library, so that they stay in the same position even when I refresh the screen, so that I can keep my library the way I need</li>
+    <li>Be able to select an element on the simulated paper and see on a panel basic element properties like name, size and position</li>
     </ul>
     <h2>:pencil: License</h2>
     <p>This project is under the MIT license. See the <a href="https://github.com/gisabernardess/react-dnd/blob/main/LICENSE" rel="nofollow">LICENSE</a> for more information.</p>
