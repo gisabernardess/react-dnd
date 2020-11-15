@@ -1,11 +1,24 @@
 import { useEffect, useState } from "react";
+import { useHandleElements } from "../util/handleElements";
 
 const Board = (props) => {
-  const [elements, setElements] = useState([]);
+  const [asideElements, setAsideElements] = useState([]);
+  const [documentElements, setDocumentElements] = useState([]);
+
+  const {
+    getElementPosition,
+    handleReorderElements,
+    handleSaveElements,
+  } = useHandleElements();
 
   useEffect(() => {
-    setElements(props.elements);
-  }, [props.elements]);
+    if (props.id === "menu") {
+      setAsideElements(props.elements);
+    }
+    if (props.id === "paper") {
+      setDocumentElements(props.documentElements);
+    }
+  }, [props]);
 
   const drop = (e) => {
     e.preventDefault();
@@ -14,12 +27,31 @@ const Board = (props) => {
     e.target.appendChild(card);
 
     if (e.target.id === "menu") {
-      const posicao = elements?.findIndex(
-        (element) => element?.id === Number(card_id)
-      );
-      elements.push(elements.splice(posicao, 1)[0]);
-      setElements(elements);
-      localStorage.setItem("elementsStorage", JSON.stringify(elements));
+      const index = getElementPosition(card_id, asideElements);
+      if (index !== -1) {
+        handleReorderElements(index, asideElements, "elementsStorage");
+      } else {
+        handleSaveElements(
+          card_id,
+          asideElements,
+          "elementsStorage",
+          "documentStorage"
+        );
+      }
+    }
+
+    if (e.target.id === "paper") {
+      const index = getElementPosition(card_id, documentElements);
+      if (index !== -1) {
+        handleReorderElements(index, documentElements, "documentStorage");
+      } else {
+        handleSaveElements(
+          card_id,
+          documentElements,
+          "documentStorage",
+          "elementsStorage"
+        );
+      }
     }
   };
 
