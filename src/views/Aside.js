@@ -14,7 +14,7 @@ const Aside = () => {
 
   useEffect(() => {
     const elementsStorage = localStorage.getItem("elementsStorage");
-    if (elementsStorage !== "[]" && elementsStorage !== null) {
+    if (elementsStorage) {
       setElements(JSON.parse(elementsStorage));
     } else setElements(loadBigHeads());
   }, []);
@@ -25,7 +25,7 @@ const Aside = () => {
 
   return (
     <div className="aside">
-      <Board id="menu" className="menu">
+      <Board id="menu" className="menu" elements={elements}>
         {elements?.map((element) => {
           return (
             <Element key={uuidv4()} id={element?.id} name={element?.name}>

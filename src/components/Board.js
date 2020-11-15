@@ -4,11 +4,8 @@ const Board = (props) => {
   const [elements, setElements] = useState([]);
 
   useEffect(() => {
-    const elementsStorage = localStorage.getItem("elementsStorage");
-    if (elementsStorage) {
-      setElements(JSON.parse(elementsStorage));
-    }
-  }, []);
+    setElements(props.elements);
+  }, [props.elements]);
 
   const drop = (e) => {
     e.preventDefault();
@@ -17,11 +14,9 @@ const Board = (props) => {
     e.target.appendChild(card);
 
     if (e.target.id === "menu") {
-      const posicao = elements?.findIndex((element, index) => {
-        console.log("findindex", index);
-        return element?.id === Number(card_id);
-      });
-
+      const posicao = elements?.findIndex(
+        (element) => element?.id === Number(card_id)
+      );
       elements.push(elements.splice(posicao, 1)[0]);
       setElements(elements);
       localStorage.setItem("elementsStorage", JSON.stringify(elements));
